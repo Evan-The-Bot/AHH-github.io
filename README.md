@@ -2,11 +2,11 @@
  MUSIC PLAYER & PORTFOLIO
 
 # To Do List
-[] folder structure
+ - [] folder structure
 
-[] music player
-[] three songs
+ - [] music player
+ - [] three songs
 
-[] images
+ - [] images
 
-[]TBA
+ - []TBA

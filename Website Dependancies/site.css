@@ -69,7 +69,7 @@ body {
 	font-family: 'Roboto Slab', serif;
 	margin: 0;
 	padding: 0;
-	background-color: blue;
+	background-color: white;
 }
 
 img {
@@ -123,7 +123,7 @@ img {
 
 
 header {
-	background-color: #001bff;
+	background-color: white;
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-top: 20px;
@@ -137,11 +137,11 @@ header {
 }
 
 .bg2 {
-	background-color: #001bff;
+	background-color: white;
 }
 
 .bg3 {
-	background-color: blue;
+	background-color: blwhiteue;
 }
 
 iframe {
@@ -153,11 +153,11 @@ iframe {
 
 footer {
 	height: 100px;
-	background-color: blue;
+	background-color: white;
 }
 
 #complete {
-	background-color: blue;
+	background-color: white;
 }
 
 #incomplete {
