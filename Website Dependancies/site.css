@@ -57,7 +57,7 @@
 }
 
 .spin {
-    animation: spin 0.01s linear infinite;
+    animation: spin 1s linear infinite;
 }
 .small-gif {
     width: 95px; /* Adjust the width */
