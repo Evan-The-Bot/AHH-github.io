@@ -9,7 +9,7 @@
 
 	}
 	section {
-		background-color: black;
+		background-color: turquoise;
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
@@ -57,7 +57,7 @@
 }
 
 .spin {
-    animation: spin 1s linear infinite;
+    animation: spin 8s linear infinite;
 }
 .small-gif {
     width: 95px; /* Adjust the width */
