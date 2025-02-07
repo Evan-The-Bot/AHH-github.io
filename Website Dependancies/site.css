@@ -6,7 +6,6 @@
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
-
 	}
 	section {
 		background-color: turquoise;
@@ -44,6 +43,7 @@
 	justify-content: space-evenly;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	color: white;
 }
 }
 
@@ -57,8 +57,9 @@
 }
 
 .spin {
-    animation: spin 8s linear infinite;
+    animation: spin 5s linear infinite;
 }
+
 .small-gif {
     width: 95px; /* Adjust the width */
     height: 95px; /* Adjust the height */
