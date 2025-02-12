@@ -67,7 +67,7 @@
 }
 .header-box {
 	font-size: 80%;
-	border: 5px solid black; /* Border around the box */
+	border: 5px dashed black; /* Border around the box */
     padding: 2px; /* Space inside the box */
     margin: 20px; /* Space outside the box */
     background-color: white; /* Background color of the box */
@@ -90,10 +90,11 @@
 }
 
 body {
-	max-width: 100%;
 	font-family: 'Roboto Slab', serif;
 	margin: 0;
 	padding: 0;
+	border-left: 15px solid white;
+	border-right: 15px	solid white;	
 }
 
 /* Title Font */
@@ -183,11 +184,11 @@ footer {
 	border-top: 4px solid black;
 
 }
-
+/* temp format */
 #complete {
 	background-color: yellow;
 	color: black;
 	border-top: 2px solid brown;
     border-bottom: 2px solid brown;
 }
-/* to be changed */
+
