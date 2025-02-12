@@ -8,7 +8,7 @@
 		margin-right: auto;
 	}
 	section {
-		background-color: turquoise;
+		background-color: white;
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
@@ -16,6 +16,7 @@
 		margin-bottom: 0;
 		padding-top: 20px;
 		padding-bottom: 20px;
+		color: black;
 	}
 		
 }
@@ -32,7 +33,7 @@
 		flex: 1;
 	}
 	section { 
-	background-color: turquoise;
+	background-color: white;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -43,7 +44,7 @@
 	justify-content: space-evenly;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	color: white;
+	color: black;
 }
 }
 
@@ -70,23 +71,18 @@ body {
 	font-family: 'Roboto Slab', serif;
 	margin: 0;
 	padding: 0;
-	background-color: white;
 }
-
-img {
-	color: white;
-}
-
+/* Title Font */
 h1 {
 	font-size: 3rem;
-	color: white;
+	color: black;
 	display: block;
 	text-align: center;
 }
 
 h2,h3,h4 {
 	font-size: 1.8rem;
-	color: white;
+	color: black;
 	display: block;
 	text-align: left;
 	padding-left: 25%;
@@ -96,20 +92,18 @@ h2,h3,h4 {
 
 p {
 	font-size: 1.4em;
-	color: white;
+	color: black;
 	padding: 10px 40px 10px 40px;
 }
 
 ul {
 	display: block;
 	text-align: left;
-	color: white;
 	padding-left: 25%;
 }
 
 li {
 	list-style-position: inside;
-	color: white;
 }
 
 img {
@@ -124,17 +118,19 @@ img {
 
 
 header {
-	background-color: white;
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	border-bottom: 4px solid black;
+	background-color: white;
+	color: black;
 }
 
 .bg1 {
 	border-top: 2px solid white;
 	border-bottom: 2px solid white;
-	background-color: black;
+	background-color: white;
 }
 
 .bg2 {
@@ -144,7 +140,7 @@ header {
 .bg3 {
 	background-color: white;
 }
-
+/* for video layout */
 iframe {
 	margin-left: auto;
 	margin-right: auto;
@@ -155,14 +151,18 @@ iframe {
 footer {
 	height: 100px;
 	background-color: white;
+	color: black;
+	border-top: 4px solid black;
+
 }
 
 #complete {
-	background-color: white;
+	background-color: yellow;
+	color: black;
+	border-top: 2px solid brown;
+    border-bottom: 2px solid brown;
 }
-
+/* to be changed */
 #incomplete {
-	background-color: black;
-	border-bottom: 2px solid white;
-	border-top: 2px solid white;
+	background-color: green;
 }
