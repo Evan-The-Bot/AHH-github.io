@@ -65,6 +65,29 @@
     width: 95px; /* Adjust the width */
     height: 95px; /* Adjust the height */
 }
+.header-box {
+	font-size: 80%;
+	border: 5px solid black; /* Border around the box */
+    padding: 2px; /* Space inside the box */
+    margin: 20px; /* Space outside the box */
+    background-color: white; /* Background color of the box */
+	display: flex;
+	flex-direction: column;
+    justify-content: flex-start; 
+	text-align: center;
+    flex: 1;
+	min-width: min-content; 
+	max-width: 15%;
+    min-height: min-content; 
+	max-height: 15%;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	width: 100%;
+}
 
 body {
 	max-width: 100%;
@@ -72,12 +95,19 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
 /* Title Font */
 h1 {
-	font-size: 3rem;
+	font-size: 3.5rem;
 	color: black;
-	display: block;
+	max-width: 65%;
 	text-align: center;
+	margin: 0;
+}
+/* Flexbox Titles */
+.title-two {
+    font-size: 125%; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the text bold */
 }
 
 h2,h3,h4 {
@@ -114,8 +144,6 @@ img {
 	max-height: 400px;
 	max-width: 100%;
 }
-
-
 
 header {
 	margin-top: 0;
@@ -163,6 +191,3 @@ footer {
     border-bottom: 2px solid brown;
 }
 /* to be changed */
-#incomplete {
-	background-color: green;
-}
