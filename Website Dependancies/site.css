@@ -62,23 +62,23 @@
 }
 /* gif file size */
 .small-gif {
-    width: 95px; /* Adjust the width */
-    height: 95px; /* Adjust the height */
+    width: 95px;
+    height: 95px;
 }
 
 .header-box {
 	font-size: 80%;
-	border: 5px dashed black; /* Border around the box */
-    padding: 2px; /* Space inside the box */
-    margin: 20px; /* Space outside the box */
-    background-color: white; /* Background color of the box */
+	border: 5px dashed black;
+    padding: 2px;
+    margin: 20px;
+    background-color: white;
 	display: flex;
 	flex-direction: column;
     justify-content: flex-start; 
 	text-align: center;
     flex: 1;
 	min-width: min-content; 
-	max-width: 20%;
+	max-width: 22%;
     min-height: min-content; 
 	max-height: 15%;
 }
@@ -94,8 +94,8 @@
 
 /* Flexbox Titles */
 .title-two {
-    font-size: 125%; /* Adjust the font size as needed */
-    font-weight: bold; /* Make the text bold */
+    font-size: 125%;
+    font-weight: bold;
 }
 
 body {
@@ -108,7 +108,9 @@ body {
 
 /* Title Font */
 h1 {
-	font-size: 3.5rem;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-size: 5.0vw;
+	text-decoration: underline;
 	color: black;
 	max-width: 65%;
 	text-align: center;
@@ -116,7 +118,7 @@ h1 {
 }
 
 h2,h3,h4 {
-	font-size: 1.8rem;
+	font-size: 1.8vw;
 	color: black;
 	display: block;
 	text-align: left;
@@ -126,7 +128,7 @@ h2,h3,h4 {
 }
 
 p {
-	font-size: 1.4em;
+	font-size: 1.4vw;
 	color: black;
 	padding: 10px 40px 10px 40px;
 }
@@ -155,14 +157,11 @@ header {
 	margin-bottom: 0;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	border-bottom: 4px solid black;
 	background-color: white;
 	color: black;
 }
 
 .bg1 {
-	border-top: 2px solid white;
-	border-bottom: 2px solid white;
 	background-color: white;
 }
 
@@ -189,10 +188,10 @@ footer {
 
 }
 /* temp format */
-#complete {
-	background-color: yellow;
+#SectionWithBorder {
+	background-color: white;
 	color: black;
-	border-top: 2px solid brown;
-    border-bottom: 2px solid brown;
+    border-bottom: 4px solid black;
+	border-top: 4px solid black;
 }
 
