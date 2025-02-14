@@ -1,14 +1,14 @@
 const tagSelectors = [
-  {
+/*  {
     tag: 'h1',
     name: 'Title',
     parent: 'header',
     sibling: 0,
     text: 'Put your title here'
   },
-  {
+ {
     tag: 'h2',
-    name: 'Name',
+   name: 'Name',
     parent: 'div#element-0',
     sibling: 0,
     text: 'Put your name here'
@@ -55,6 +55,7 @@ const tagSelectors = [
     sibling: 0,
     text: 'Put a description of the image here'
   },
+  */
 ]
 
 document.onload = main();
