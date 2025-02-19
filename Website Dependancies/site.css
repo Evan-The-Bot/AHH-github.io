@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script|Roboto|Roboto+Slab');
 
-@media only screen and (min-device-width: 300px) and (max-device-width: 840px){
+@media only screen and (min-device-width: 300px) and (max-device-width: 840px) {
 
     div {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
+
     section {
         background-color: white;
         width: 100%;
@@ -18,10 +19,9 @@
         padding-bottom: 20px;
         color: black;
     }
-        
 }
 
-@media only screen and (min-device-width: 840px){
+@media only screen and (min-device-width: 840px) {
     div {
         width: 50%;
         margin-left: auto;
@@ -32,26 +32,28 @@
         flex-wrap: wrap;
         flex: 1;
     }
-    section { 
-    background-color: white;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: black;
-}
+
+    section {
+        background-color: white;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: black;
+    }
 }
 
 @keyframes spin {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -61,11 +63,11 @@
     animation: spin 5s linear infinite;
 }
 
-.SectionWithBorder{
+.SectionWithBorder {
     border-bottom: 5px solid black;
-    border-top:  5px solid black;
+    border-top: 5px solid black;
     background-color: turquoise;
-    }
+}
 
 /* header boxes */
 .header-box {
@@ -76,14 +78,15 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     text-align: center;
     flex: 1;
-    min-width: min-content; 
+    min-width: min-content;
     max-width: 22%;
-    min-height: min-content; 
+    min-height: min-content;
     max-height: 15%;
 }
+
 /* flex container */
 .flex-container {
     display: flex;
@@ -92,29 +95,12 @@
     width: 100%;
 }
 
-.wide-box{
-	display: flex;
- 	background-color: white;
+.wide-box {
+    display: block;
+    background-color: white;
     border: 4px solid black;
-	color: black;
-	 max-width: 85%;
-	 flex: 2;
-	 text-align: center;
-}
-
-/* Pic description */
-.thin-box {
-	display: flex;
-    background-color: white;
-    border-left: 4px solid white;
-    border-right: 4px solid white;
-	text-align: center;
-}
-.thin-box2 {
-	display: flex;
-    background-color: white;
-    border-left: 4px solid white;
-	text-align: center;
+    color: black;
+    text-align: center;
 }
 
 /* Flexbox Titles */
@@ -128,12 +114,12 @@ body {
     margin: 0;
     padding: 0;
     border-left: 15px solid white;
-    border-right: 15px solid white;    
+    border-right: 15px solid white;
 }
 
 /* Title Font */
 h1 {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 5.0vw;
     text-decoration: underline;
     color: black;
@@ -145,9 +131,9 @@ h1 {
 h2 {
     font-size: 2.0vw;
     color: black;
-	margin: auto;
-	padding: 5px;
-	text-align: center;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
     text-decoration: underline;
 }
 
@@ -160,9 +146,9 @@ p {
 
 img {
     display: block;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
-    height: auto;
     max-height: 100%;
     max-width: 100%;
 }
@@ -187,6 +173,7 @@ header {
 .bg3 {
     background-color: white;
 }
+
 /* for video layout */
 iframe {
     margin-left: auto;
@@ -199,9 +186,10 @@ footer {
     height: 100px;
     background-color: white;
     color: black;
-    border-top: 4px solid black;
 }
-#tall {
+
+#tall{
     min-height: 480px;
     background-color: white;
 }
+
