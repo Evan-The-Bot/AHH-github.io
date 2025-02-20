@@ -95,11 +95,8 @@
     width: 100%;
 }
 
-.wide-box {
-    display: block;
-    background-color: white;
-    border: 4px solid black;
-    color: black;
+#wide-box {
+    display: flex;
     text-align: center;
 }
 
@@ -130,9 +127,9 @@ h1 {
 
 h2 {
     font-size: 2.0vw;
-    color: black;
     margin: auto;
-    padding: 5px;
+    padding-top: 5px;
+    color: black;
     text-align: center;
     text-decoration: underline;
 }
@@ -140,7 +137,7 @@ h2 {
 p {
     font-size: 1.4vw;
     color: black;
-    padding: 2px 2px 2px 2px;
+    padding: 8px;
     text-align: center;
 }
 
@@ -178,8 +175,7 @@ header {
 iframe {
     margin-left: auto;
     margin-right: auto;
-    display: block;
-    max-width: 100%
+    display: inline-flex;
 }
 
 footer {
@@ -188,8 +184,7 @@ footer {
     color: black;
 }
 
-#tall{
+#tall {
     min-height: 480px;
     background-color: white;
 }
-
