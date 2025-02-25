@@ -64,7 +64,7 @@
     animation: spin 5s linear infinite;
 }
 
-.whee { 
+.whee {
     min-width: 100%;
 }
 
@@ -99,6 +99,7 @@
     font-size: 125%;
     font-weight: bold;
 }
+
 /* USED IN HEADER */
 
 .SectionWithBorder {
@@ -112,13 +113,17 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    flex: 1;
 }
+
 .ContainingTheImage {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    flex: 1.2;
 }
+
 body {
     font-family: 'Roboto Slab', serif;
     margin: 0;
@@ -137,6 +142,7 @@ h1 {
     text-align: center;
     margin: 0;
 }
+
 /* Body Title */
 h2 {
     font-size: 1.5vw;
@@ -147,8 +153,9 @@ h2 {
     color: black;
     text-align: center;
     text-decoration: underline;
-    
+
 }
+
 /* Body text */
 h3 {
     font-size: 2.0vw;
@@ -159,7 +166,7 @@ h3 {
     color: black;
     text-align: center;
     text-decoration: underline;
-    
+
 }
 
 p {
@@ -172,7 +179,7 @@ p {
 img {
     margin-left: auto;
     margin-right: auto;
-    width:100%;
+    width: 100%;
     height: auto;
     display: block;
 }
