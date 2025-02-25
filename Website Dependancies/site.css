@@ -3,6 +3,7 @@
 @media only screen and (min-device-width: 300px) and (max-device-width: 840px) {
 
     div {
+        display: flex;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -62,30 +63,27 @@
 .spin {
     animation: spin 5s linear infinite;
 }
-.whee{ 
+
+.whee { 
     min-width: 100%;
 }
-.SectionWithBorder {
-    border-bottom: 5px solid black;
-    border-top: 5px solid black;
-    background-color: turquoise;
-}
+
+/* USED IN HEADER */
+
 /* header boxes */
 .header-box {
-    font-size: 80%;
     border: 5px dashed black;
     padding: 2px;
     margin: 20px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     text-align: center;
-    flex: 1;
     min-width: min-content;
-    max-width: 22%;
     min-height: min-content;
+    max-width: 22%;
     max-height: 15%;
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+    font-size: 80%;
 }
 
 /* flex container */
@@ -95,12 +93,32 @@
     justify-content: space-between;
     width: 100%;
 }
+
 /* Flexbox Title titles */
 .title-two {
     font-size: 125%;
     font-weight: bold;
 }
+/* USED IN HEADER */
 
+.SectionWithBorder {
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    background-color: turquoise;
+}
+
+.BesideTheImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.ContainingTheImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 body {
     font-family: 'Roboto Slab', serif;
     margin: 0;
@@ -119,7 +137,7 @@ h1 {
     text-align: center;
     margin: 0;
 }
-
+/* Body Title */
 h2 {
     font-size: 1.5vw;
     margin-left: auto;
@@ -131,6 +149,7 @@ h2 {
     text-decoration: underline;
     
 }
+/* Body text */
 h3 {
     font-size: 2.0vw;
     margin-left: auto;
@@ -153,10 +172,9 @@ p {
 img {
     margin-left: auto;
     margin-right: auto;
-    max-height: 95%;
-    max-width: 75%;
+    width:100%;
+    height: auto;
     display: block;
-    flex: 1;
 }
 
 header {
@@ -166,18 +184,6 @@ header {
     padding-bottom: 20px;
     background-color: white;
     color: black;
-}
-
-.bg1 {
-    background-color: white;
-}
-
-.bg2 {
-    background-color: white;
-}
-
-.bg3 {
-    background-color: white;
 }
 
 /* for video layout */
@@ -190,7 +196,6 @@ iframe {
 footer {
     height: 100px;
     background-color: white;
-    color: black;
 }
 
 #tall {
