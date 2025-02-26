@@ -65,7 +65,7 @@
 }
 
 .whee {
-    min-width: 100%;
+    max-width: 25%;
 }
 
 /* USED IN HEADER */
@@ -108,6 +108,7 @@
     background-color: turquoise;
 }
 
+/* In The Body First Section*/
 .BesideTheImage {
     display: flex;
     flex-direction: column;
@@ -123,6 +124,23 @@
     align-items: center;
     flex: 1.2;
 }
+
+.invisible-button {
+    background: red;
+    margin-top: 26%;
+    margin-left: 0%;
+    margin-right: 10%;
+    border: transparent 0px;
+    color: transparent;
+    cursor: pointer;
+    opacity: 0%;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    
+  }
+
+/* In The Body First Section */
 
 body {
     font-family: 'Roboto Slab', serif;
@@ -198,6 +216,8 @@ iframe {
     margin-left: auto;
     margin-right: auto;
     display: inline-flex;
+    width: 43.3%;
+    height: auto;
 }
 
 footer {
