@@ -25,7 +25,6 @@
 
 </head>
 <!-- Head is at the top before website is totally loaded-->
-
 <!-- just dont [ class="spin" ] the body alr -->
 
 <body>
@@ -53,7 +52,9 @@
         being picked up. He is my topic for the music program I am building for this program I am using both him
         specificly and other cats like Maxwell the cat in the player. The formating of the website is attempting to
         mirror a newspaper article and for a color scheme im using a white black and turqouise as I think this will
-        create a clean look while still adding some color to the website.
+        create a clean look while still adding some color to the website. Under this section there is a video section
+        these videos have been muted so they can automaticly be played. These are both examples of cat based music.
+        These videos are a part of memes surrounding them but the origin of the music is slightly hard to figure out.
       </p>
     </div>
     <div class="ContainingTheImage">
@@ -61,13 +62,42 @@
       <button class="invisible-button" onclick="alert('Boop!')">Invisible Button</button>
     </div>
     <div class="besideTheImage">
+      <img src="Images/maxwell-pat-pat.gif" alt="pet maxwell" class="spin-reverse">
+    </div>
+  </section>
+  <!-- Video & YouTube API Section -->
+  <section class="SectionWithBorder" id="tall">
+    <div class="video-container">
       <h3>
-        Music Player
-        <br>
-        With Cat Based Music
+        IT SPIN BUT TWICE <br>
       </h3>
-      <img src="images/PXL_20250302_213926739.jpg" alt="music player" class="MusicPlayerImage">
-      <p>
+      <!-- YouTube API, SPIN CAT -->
+      <iframe class="spin" width="448" height="252"
+        src="https://www.youtube.com/embed/U2Fjfqm-7g8?si=FhuzzIP92RhXoPhg&autoplay=1&mute=1"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+      <h3>
+        TRUMPET CAT <br>
+      </h3>
+      <!-- YouTube API, TRUMPET CAT -->
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/Kr1XVY3dLUg?si=CEjmaqJJ6eU5NYSw&autoplay=1&mute=1"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+  <!-- Section for Music PLayer-->
+  <section class="flex-container">
+    <img src="images/Screenshot 2025-03-03 163624.png" alt="music player" class="MusicPlayerImage" id="YES">
+    <div class="BesideTheImage">
+      <h3>
+        Music Player Description
+      </h3>
+      <p id="NO">
         This is a music player that plays music that is cat based. The music is very cool and is very nice to listen to.
         This music player is going to have an associated game with it. This game will take up the left two thirds of the
         screen. The music player itself will have three diffrent songs with it. These songs will be accessable from the
@@ -77,38 +107,6 @@
         The music player will have a play/pause button, a stop button, a skip button, and a volume slider.
       </p>
     </div>
-  </section>
-  <!-- Video & YouTube API Section -->
-  <section class="SectionWithBorder flex-container" id="tall">
-    <div>
-      <!-- YouTube API, SPIN CAT -->
-      <iframe class="spin" width="448" height="252"
-        src="https://www.youtube.com/embed/U2Fjfqm-7g8?si=FhuzzIP92RhXoPhg&autoplay=1&mute=1"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    <div>
-      <h3>
-        IT SPIN BUT TWICE <br>
-      </h3>
-      <p>
-        words words words words words words words words words words words words words words words words words words
-        words words words words words words words words words words words words words words words words words words
-        words words words words words words words words words words words words words words words words words words
-        words words words words words words words words words words words words words words words words words words
-        words words words words words words words words words words words words words words words words words words
-        words words words words words words words words words words words words words words words words words words
-      </p>
-    </div>
-  </section>
-  <!-- weather?-->
-  <section>
-    <img src="Images/maxwell-pat-pat.gif" alt="pet maxwell" class="whee">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Kr1XVY3dLUg?si=CEjmaqJJ6eU5NYSw"
-    title="YouTube video player" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </section>
   <!--border 2-->
   <section class="SectionWithBorder">

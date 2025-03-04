@@ -63,6 +63,12 @@
 .spin {
     animation: spin 5s linear infinite;
 }
+.spin-reverse {
+    padding: 15%;
+    animation: spin 5s linear infinite reverse;
+    height: 40%;
+    width: 75%;
+}
 
 .whee {
     max-width: 25%;
@@ -118,7 +124,7 @@
 .BesideTheImage {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex: 1;
 }
@@ -126,7 +132,7 @@
 .ContainingTheImage {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex: 1.2;
 }
@@ -151,11 +157,23 @@
      padding-right: 30px;
      padding-top: 0px;
      padding-bottom: 0px;
-    width: 50%;
+    width: 80%;
     height: auto;
+    margin: center;
 }
-
 /* In The Body First Section */
+
+
+.video-container h3 {
+    margin-bottom: 18%; /* Adjust as needed for spacing */
+  }
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8%; /* Adjust as needed for spacing */
+  }
 
 body {
     font-family: 'Roboto Slab', serif;
@@ -247,4 +265,15 @@ footer {
 #tall {
     min-height: 35%;
     background-color: white;
+}
+
+#YES {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex: 1.5;
+}
+#NO {
+    display: flex;
+    flex: 1;
 }
