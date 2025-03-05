@@ -66,24 +66,19 @@
 .spin-reverse {
     padding: 15%;
     animation: spin 5s linear infinite reverse;
-    height: 40%;
-    width: 75%;
+    height: 25%;
+    width: 50%;
 }
 
-.whee {
-    max-width: 25%;
-    position: fixed;
-    bottom: 5px;
-    left: 10%;
-    transform: translateX(-50%);
-    z-index: 1000;
-
+.STAY {
+ position: fixed;
 }
 
 /* USED IN HEADER */
 
 /* header boxes */
 .header-box {
+    background-color: white;
     border: 5px dashed black;
     padding: 2px;
     margin: 20px;
@@ -176,19 +171,21 @@
   }
 
 body {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    border-left: 15px solid white;
-    border-right: 15px solid white;
+    border-top: 15px solid mediumaquamarine;
+    border-left: 15px solid lightseagreen;
+    border-right: 15px solid lightseagreen;
+    border-bottom: 15px solid mediumaquamarine;
 }
 
 /* Title Font */
 h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 5.0vw;
     text-decoration: underline;
-    color: black;
+    color: royalblue;
     max-width: 65%;
     text-align: center;
     margin: 0;
@@ -196,6 +193,7 @@ h1 {
 
 /* Body Title */
 h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.5vw;
     margin-left: auto;
     margin-right: auto;
@@ -209,12 +207,13 @@ h2 {
 
 /* Body text */
 h3 {
-    font-size: 2.0vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.3vw;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0%;
     padding-top: 0px;
-    color: black;
+    color: royalblue;
     text-align: center;
     text-decoration: underline;
 
@@ -233,7 +232,7 @@ p {
 img {
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 85%;
     height: auto;
     display: block;
 }
@@ -267,13 +266,37 @@ footer {
     background-color: white;
 }
 
-#YES {
+#Yes {
     width: 50%;
     height: auto;
     display: flex;
     flex: 1.5;
 }
-#NO {
+#No {
     display: flex;
     flex: 1;
 }
+/* Moving Image UHH NEED TO FIX */
+.Stmove {
+    position: absolute;
+    max-width: 15%;
+    transform: translateX(-50%);
+    z-index: 1000;
+
+}
+.move-up {
+    transform: translateY(-100px); /* Moves the image 100px up? */
+}
+
+.move-left {
+    transform: translateX(-100px); /* Moves the image 100px to the left? */
+}
+.move-right {
+    transform: translateX(100px); /* Moves the image 100px to the right */
+}
+
+.move-down {
+    transform: translateY(100px); /* Moves the image 100px down */
+}
+
+/* Moving Image UHH NEED TO FIX */

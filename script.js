@@ -151,6 +151,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 );
 
+function moveUp() {
+  document.querySelector('.Stmove').classList.toggle('move-up');
+}
+
+function moveLeft() {
+  document.querySelector('.Stmove').classList.toggle('move-left');
+}
+
+function moveRight() {
+  document.querySelector('.Stmove').classList.toggle('move-right');
+}
+
+function moveDown() {
+  document.querySelector('.Stmove').classList.toggle('move-down');
+}
+
 
 
 
