@@ -278,25 +278,27 @@ footer {
 }
 /* Moving Image UHH NEED TO FIX */
 .Stmove {
-    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    position: fixed;
     max-width: 15%;
     transform: translateX(-50%);
     z-index: 1000;
 
 }
 .move-up {
-    transform: translateY(-100px); /* Moves the image 100px up? */
+    transform: translateY(-550%); /* Moves the image 100px up? */
 }
 
 .move-left {
-    transform: translateX(-100px); /* Moves the image 100px to the left? */
+    transform: translateX(-445px); /* Moves the image 100px to the left? */
 }
 .move-right {
-    transform: translateX(100px); /* Moves the image 100px to the right */
+    transform: translateX(225%); /* Moves the image 100px to the right */
 }
 
 .move-down {
-    transform: translateY(100px); /* Moves the image 100px down */
+    transform: translateY(100%); /* Moves the image 100px down */
 }
 
 /* Moving Image UHH NEED TO FIX */
