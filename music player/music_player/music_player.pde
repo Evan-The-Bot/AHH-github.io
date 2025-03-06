@@ -8,3 +8,4 @@ appHeight = displayHeight;
 void draw() {
   
 }
+//add width and height
