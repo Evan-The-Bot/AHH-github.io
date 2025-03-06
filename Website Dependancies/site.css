@@ -63,6 +63,7 @@
 .spin {
     animation: spin 5s linear infinite;
 }
+
 .spin-reverse {
     padding: 15%;
     animation: spin 5s linear infinite reverse;
@@ -71,9 +72,9 @@
 }
 
 .STAY {
- position: fixed;
- bottom: 5px;
- left: 5px;
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
 }
 
 /* USED IN HEADER */
@@ -146,31 +147,34 @@
     position: absolute;
     width: 5px;
     height: 8px;
-    
-  }
+
+}
 
 .MusicPlayerImage {
-     padding-left: 30px;
-     padding-right: 30px;
-     padding-top: 0px;
-     padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     width: 80%;
     height: auto;
     margin: center;
 }
+
 /* In The Body First Section */
 
 
 .video-container h3 {
-    margin-bottom: 18%; /* Adjust as needed for spacing */
-  }
+    margin-bottom: 18%;
+    /* Adjust as needed for spacing */
+}
 
 .video-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 8%; /* Adjust as needed for spacing */
-  }
+    margin-bottom: 8%;
+    /* Adjust as needed for spacing */
+}
 
 body {
     font-family: 'Times New Roman', Times, serif;
@@ -255,7 +259,7 @@ iframe {
     display: inline-flex;
     width: 55%;
     height: auto;
-    aspect-ratio:  16 / 9;
+    aspect-ratio: 16 / 9;
 }
 
 footer {
@@ -274,10 +278,12 @@ footer {
     display: flex;
     flex: 1.5;
 }
+
 #No {
     display: flex;
     flex: 1;
 }
+
 /* Moving Image UHH NEED TO FIX */
 .Stmove {
     bottom: 5px;

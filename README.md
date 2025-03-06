@@ -2,11 +2,16 @@
  MUSIC PLAYER & PORTFOLIO
 
 # To Do List
- - [] folder structure
+ - [x] folder structure
 
  - [] music player
- - [] three songs
 
- - [] images
+ - [1/3] three songs
 
- - []TBA
+ - [x] images
+
+ - [x] moving image
+
+ - [x] music player description
+
+- [x] gifs and videos

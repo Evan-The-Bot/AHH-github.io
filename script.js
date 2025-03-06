@@ -153,6 +153,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 let currentX = 0;
 let currentY = 0;
+const initialX = 0;
+const initialY = 0;
 
 function moveImage() {
   const image = document.getElementById('AH');
@@ -166,13 +168,20 @@ function moveImage() {
 
   // Check if the new position is within the body borders
   if (imageRect.right + 100 <= bodyRect.right && imageRect.left + 100 >= bodyRect.left &&
-      imageRect.bottom - 50 <= bodyRect.bottom && imageRect.top - 50 >= bodyRect.top) {
-      currentX = newX;
-      currentY = newY;
-      image.style.transform = `translate(${currentX}px, ${currentY}px)`;
+    imageRect.bottom - 50 <= bodyRect.bottom && imageRect.top - 50 >= bodyRect.top) {
+    currentX = newX;
+    currentY = newY;
+    image.style.transform = `translate(${currentX}px, ${currentY}px)`;
   } else {
-      console.log('Movement stopped: Image would go out of bounds');
+    console.log('Movement stopped: Image would go out of bounds');
   }
+}
+
+function resetImage() {
+  const image = document.getElementById('AH');
+  currentX = initialX;
+  currentY = initialY;
+  image.style.transform = `translate(${initialX}px, ${initialY}px)`;
 }
 
 
