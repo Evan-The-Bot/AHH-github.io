@@ -151,20 +151,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
 );
 
-function moveUp() {
-  document.querySelector('.Stmove').classList.toggle('move-up');
-}
+let currentX = 0;
+let currentY = 0;
 
-function moveLeft() {
-  document.querySelector('.Stmove').classList.toggle('move-left');
-}
+function moveImage() {
+  const image = document.getElementById('AH');
+  const body = document.body;
+  const bodyRect = body.getBoundingClientRect();
+  const imageRect = image.getBoundingClientRect();
 
-function moveRight() {
-  document.querySelector('.Stmove').classList.toggle('move-right');
-}
+  // Calculate the new position
+  const newX = currentX + 100; // Move 100px to the right each time
+  const newY = currentY - 50;  // Move 50px up each time
 
-function moveDown() {
-  document.querySelector('.Stmove').classList.toggle('move-down');
+  // Check if the new position is within the body borders
+  if (imageRect.right + 100 <= bodyRect.right && imageRect.left + 100 >= bodyRect.left &&
+      imageRect.bottom - 50 <= bodyRect.bottom && imageRect.top - 50 >= bodyRect.top) {
+      currentX = newX;
+      currentY = newY;
+      image.style.transform = `translate(${currentX}px, ${currentY}px)`;
+  } else {
+      console.log('Movement stopped: Image would go out of bounds');
+  }
 }
 
 
