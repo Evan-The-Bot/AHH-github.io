@@ -20,31 +20,31 @@ ExitY = 0;
 ExitW = appWidth * 1/20;
 ExitH = appHeight * 1/20;
 // 
-StopButtonX = BackgroundMenuX + 50;
-StopButtonY = appWidth * 1/20;
+StopButtonX = BackgroundMenuX * 1.04;
+StopButtonY = appHeight * 1/15;
 StopButtonW = appWidth * 1/25;
-StopButtonH = appWidth * 1/25;
+StopButtonH = StopButtonW;
+//
+SkipButtonX = BackgroundMenuX * 1.13;
+SkipButtonY = appHeight * 1/15;
+SkipButtonW = appWidth * 1/25;
+SkipButtonH = SkipButtonW;
+//
+PlayButtonX = BackgroundMenuX * 1.22;
+PlayButtonY = appHeight * 1/15;
+PlayButtonW = appWidth * 1/25;
+PlayButtonH = PlayButtonW;
+//
+FastForwardButtonX = BackgroundMenuX * 1.31;
+FastForwardButtonY = appHeight * 1/15;
+FastForwardButtonW = appWidth * 1/25;
+FastForwardButtonH = FastForwardButtonW;
+//
+PauseButtonX = BackgroundMenuX * 1.40;
+PauseButtonY = appHeight * 1/15;
+PauseButtonW = appWidth * 1/25;
+PauseButtonH = PauseButtonW;
 /* //
-SkipButtonX = ;
-SkipButtonY = ;
-SkipButtonW = ;
-SkipButtonH = ;
-//
-PlayButtonX = ;
-PlayButtonY = ;
-PlayButtonW = ;
-PlayButtonH = ;
-//
-FastForwardButtonX = ;
-FastForwardButtonY = ;
-FastForwardButtonW = ;
-FastForwardButtonH = ;
-//
-PauseButtonX = ;
-PauseButtonY = ;
-PauseButtonW = ;
-PauseButtonH = ;
-//
 BarOfVolumeX = ;
 BarOfVolumeY = ;
 BarOfVolumeW = ;
