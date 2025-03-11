@@ -20,46 +20,46 @@ ExitY = 0;
 ExitW = appWidth * 1/20;
 ExitH = appHeight * 1/20;
 // 
-StopButtonX = BackgroundMenuX * 1.04;
+StopButtonX = BackgroundMenuX * 104/100;
 StopButtonY = appHeight * 1/15;
 StopButtonW = appWidth * 1/25;
 StopButtonH = StopButtonW;
 //
-SkipButtonX = BackgroundMenuX * 1.13;
+SkipButtonX = BackgroundMenuX * 113/100;
 SkipButtonY = appHeight * 1/15;
 SkipButtonW = appWidth * 1/25;
 SkipButtonH = SkipButtonW;
 //
-PlayButtonX = BackgroundMenuX * 1.22;
+PlayButtonX = BackgroundMenuX * 122/100;
 PlayButtonY = appHeight * 1/15;
 PlayButtonW = appWidth * 1/25;
 PlayButtonH = PlayButtonW;
 //
-FastForwardButtonX = BackgroundMenuX * 1.31;
+FastForwardButtonX = BackgroundMenuX * 131/100;
 FastForwardButtonY = appHeight * 1/15;
 FastForwardButtonW = appWidth * 1/25;
 FastForwardButtonH = FastForwardButtonW;
 //
-PauseButtonX = BackgroundMenuX * 1.40;
+PauseButtonX = BackgroundMenuX * 140/100;
 PauseButtonY = appHeight * 1/15;
 PauseButtonW = appWidth * 1/25;
 PauseButtonH = PauseButtonW;
+//
+BarOfVolumeX = BackgroundMenuX * 102/100;
+BarOfVolumeY = appHeight * 6/30;
+BarOfVolumeW = appWidth * 92/300;
+BarOfVolumeH = appHeight * 1/25;
+//
+TitleX = BackgroundMenuX;
+TitleY = appHeight * 9/30;
+TitleW = appWidth * 1/6;
+TitleH = appHeight * 1/12;
+//
+AuthorX = BackgroundMenuX * 75/60;
+AuthorY = appHeight * 9/30;
+AuthorW = appWidth * 1/6;
+AuthorH = appHeight * 1/12;
 /* //
-BarOfVolumeX = ;
-BarOfVolumeY = ;
-BarOfVolumeW = ;
-BarOfVolumeH = ;
-//
-TitleX = ;
-TitleY = ;
-TitleW = ;
-TitleH = ;
-//
-AuthorX = ;
-AuthorY = ;
-AuthorW = ;
-AuthorH = ;
-//
 ImageX = ;
 ImageY = ;
 ImageW = ;

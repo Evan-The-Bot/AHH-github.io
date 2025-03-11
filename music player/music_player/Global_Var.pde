@@ -1,5 +1,4 @@
 int appWidth, appHeight;
-int numberOfSongs = 1;
 int currentSong = numberOfSongs - numberOfSongs; 
 //
 float BackgroundMenuX, BackgroundMenuY, BackgroundMenuW, BackgroundMenuH, PongBackdropX, PongBackdropY, PongBackdropW, PongBackdropH;
@@ -11,10 +10,8 @@ float PlayerIScoreX, PlayerIScoreY, PlayerIScoreW, PlayerIScoreH, PlayerIIScoreX
 float ScoreBoxX, ScoreBoxY, ScoreBoxW, ScoreBoxH, HeaderX, HeaderY, HeaderW, HeaderH, ExitX, ExitY, ExitW, ExitH;
 //
 String musicPathway = "music/";
-//
 String MusicI = "Helldivers 2  - 8bit of Liber-Tea";
-//
 String fileName_mp3 = ".mp3";
-//
 String musicDirectory ="../../../" + musicPathway;
 String file =musicDirectory + MusicI + fileName_mp3;
+//
