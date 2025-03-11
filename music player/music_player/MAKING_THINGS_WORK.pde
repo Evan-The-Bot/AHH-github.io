@@ -68,36 +68,36 @@ ImageH = ImageW;
 SIX = BackgroundMenuX;
 SIY = appHeight * 22/30;
 SIW = appWidth * 1/9;
-SIH = 80;
+SIH = appHeight * 1/6;
 //
 SIIX = BackgroundMenuX * 105/90;
 SIIY = appHeight * 22/30;
 SIIW = appWidth * 1/9;
-SIIH = 80;
+SIIH = appHeight * 1/6;
 //
 SIIIX = BackgroundMenuX * 120/90;
 SIIIY = appHeight * 22/30;
 SIIIW = appWidth * 1/9;
-SIIIH = appHeight * 2/20;
+SIIIH = appHeight * 1/6;
 // 
 SongListX = BackgroundMenuX;
 SongListY = appHeight * 27/30;
 SongListW = appWidth * 1/3;
 SongListH = appWidth * 1/14;
-/* //
-PlayerIScoreX = ;
-PlayerIScoreY = ;
-PlayerIScoreW = ;
-PlayerIScoreH = ;
 //
-PlayerIIScoreX = ;
-PlayerIIScore = ;
-PlayerIIScoreW = ;
-PlayerIIScoreH = ;
+PlayerIScoreX = appWidth * 12/30;
+PlayerIScoreY = appHeight * 1/100;
+PlayerIScoreW = appWidth * 2/30;
+PlayerIScoreH = appWidth * 1/25;
 //
-ScoreBoxX = ;
-ScoreBoxY = ;
-ScoreBoxW = ;
-ScoreBoxH = ;
-// */
+PlayerIIScoreX = appWidth * 8/30;
+PlayerIIScoreY = appHeight * 1/100;
+PlayerIIScoreW = appWidth * 2/30;
+PlayerIIScoreH = appWidth * 1/25;
+//
+ScoreBoxX = appWidth *   1/3;
+ScoreBoxY = appHeight * 1/100;
+ScoreBoxW = appWidth * 2/30;
+ScoreBoxH = appWidth * 1/25;
+// 
 }
