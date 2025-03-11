@@ -59,32 +59,32 @@ AuthorX = BackgroundMenuX * 75/60;
 AuthorY = appHeight * 9/30;
 AuthorW = appWidth * 1/6;
 AuthorH = appHeight * 1/12;
+//
+ImageX = BackgroundMenuX * 212/200;
+ImageY = appHeight * 12/30;
+ImageW = appWidth * 26/100;
+ImageH = ImageW;
+//
+SIX = BackgroundMenuX;
+SIY = appHeight * 22/30;
+SIW = appWidth * 1/9;
+SIH = 80;
+//
+SIIX = BackgroundMenuX * 105/90;
+SIIY = appHeight * 22/30;
+SIIW = appWidth * 1/9;
+SIIH = 80;
+//
+SIIIX = BackgroundMenuX * 120/90;
+SIIIY = appHeight * 22/30;
+SIIIW = appWidth * 1/9;
+SIIIH = appHeight * 2/20;
+// 
+SongListX = BackgroundMenuX;
+SongListY = appHeight * 27/30;
+SongListW = appWidth * 1/3;
+SongListH = appWidth * 1/14;
 /* //
-ImageX = ;
-ImageY = ;
-ImageW = ;
-ImageH = ;
-//
-SIX = ;
-SIY = ;
-SIW = ;
-SIH = ;
-//
-SIIX = ;
-SIIY = ;
-SIIW = ;
-SIIH = ;
-//
-SIIIX = ;
-SIIIY = ;
-SIIIW = ;
-SIIIH = ;
-//
-SongListX = ;
-SongListY = ;
-SongListW = ;
-SongListH = ;
-//
 PlayerIScoreX = ;
 PlayerIScoreY = ;
 PlayerIScoreW = ;

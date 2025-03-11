@@ -5,11 +5,7 @@ import ddf.minim.effects.*;
 import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
-Minim minim;
-int numberOfSongs = 1;
-AudioPlayer[] playList = new AudioPlayer[ numberOfSongs ];
 // Minim End
-
 void setup() {
 //
 fullScreen();
@@ -19,11 +15,12 @@ appHeight = displayHeight;
 //
 functional();
 //
+
 // Minim Start
 minim = new Minim(this);
 println( file );
 playList[ currentSong ] = minim.loadFile( file );
-playList[ currentSong ].play();
+//playList[ currentSong ].play();
 // Minim End  
 
 }
@@ -55,7 +52,7 @@ rect(ExitX, ExitY, ExitW, ExitH);
 }
 ////
 void mousePressed () {
-  //
+//
 if (mouseX>ExitX && mouseX<=ExitX+ExitW && mouseY<=ExitY+ExitH) exit();
 //
 }
