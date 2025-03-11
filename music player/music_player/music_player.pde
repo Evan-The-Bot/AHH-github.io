@@ -5,6 +5,10 @@ import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 
+Minim minim;
+
+AudioPlayer[] playList = new AudioPlayer[ numberOfSongs ];
+
 void setup() {
 //
 fullScreen();
@@ -14,9 +18,15 @@ appHeight = displayHeight;
 //
 functional();
 //
+minim = new Minim(this);
 //
-//playList[] = minum.loadfile( file );
+AudioPlayer[currentSong] = minum.loadFile( file );
+//
 println( file );
+//
+playList[ currentSong ] = minim.loadFile( file );
+//
+playList[currentSong].play();
 //
 }
 //
