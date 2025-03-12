@@ -83,35 +83,40 @@ void functional() {
   SongListX = BackgroundMenuX;
   SongListY = appHeight * 27/30;
   SongListW = appWidth * 1/3;
-  SongListH = appWidth * 1/14;
+  SongListH = appHeight * 1/10;
   //
-  PlayerIScoreX = appWidth * 12/30;
+  PlayerIScoreX = appWidth * 1/4;
   PlayerIScoreY = appHeight * 1/100;
-  PlayerIScoreW = appWidth * 2/30;
-  PlayerIScoreH = appWidth * 1/25;
+  PlayerIScoreW = appWidth * 675/9000;
+  PlayerIScoreH = appHeight * 2/25;
   //
-  PlayerIIScoreX = appWidth * 8/30;
+  PlayerIIScoreX = appWidth * 16/40;
   PlayerIIScoreY = appHeight * 1/100;
-  PlayerIIScoreW = appWidth * 2/30;
-  PlayerIIScoreH = appWidth * 1/25;
+  PlayerIIScoreW = appWidth * 675/9000;
+  PlayerIIScoreH = appHeight * 2/25;
   //
-  ScoreBoxX = appWidth *   1/3;
+  ScoreBoxX = appWidth * 13/40;
   ScoreBoxY = appHeight * 1/100;
-  ScoreBoxW = appWidth * 2/30;
-  ScoreBoxH = appWidth * 1/25;
+  ScoreBoxW = appWidth * 675/9000;
+  ScoreBoxH = appHeight * 2/25;
   //
-  QuitMenuX = 400;
-  QuitMenuY = 400;
-  QuitMenuW = 400;
-  QuitMenuH = 400;
+  QuitMenuX = appWidth * 1/4;
+  QuitMenuY = appHeight * 1/3;
+  QuitMenuW = appWidth * 2025/9000;
+  QuitMenuH = QuitMenuW;
   //
-  QuitYesX = 420;
-  QuitYesY = 420;
-  QuitYesW = 80;
-  QuitYesH = 50;
+  QuitYesX = appWidth * 108/400;
+  QuitYesY = appHeight * 32/50;
+  QuitYesW = appWidth * 675/9000;
+  QuitYesH = appHeight * 1/15;
   //
-  QuitNoX = 450;
-  QuitNoY = 450;
-  QuitNoW = 80;
-  QuitNoH = 50;
+  QuitNoX = appWidth * 152/400;
+  QuitNoY = appHeight * 32/50;
+  QuitNoW = appWidth * 675/9000;
+  QuitNoH = appHeight * 1/15;
+  //
+  QuitQX = appWidth * 12/40;
+  QuitQY = appHeight * 40/100;
+  QuitQW = appWidth * 1170/9000;
+  QuitQH = appHeight * 2/25;
 }

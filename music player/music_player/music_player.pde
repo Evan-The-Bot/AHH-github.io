@@ -22,44 +22,57 @@ void setup() {
   playList[ currentSong ] = minim.loadFile( file );
   //playList[ currentSong ].play();
   // Minim End
+  
 }
 ////
 void draw() {
-  rect(BackgroundMenuX, BackgroundMenuY, BackgroundMenuW, BackgroundMenuH);
-  rect(PongBackdropX, PongBackdropY, PongBackdropW, PongBackdropH);
-  rect(HeaderX, HeaderY, HeaderW, HeaderH);
-  rect(LoopButtonX, LoopButtonY, LoopButtonW, LoopButtonH);
-  rect(SkipButtonX, SkipButtonY, SkipButtonW, SkipButtonH);
-  rect(PlayButtonX, PlayButtonY, PlayButtonW, PlayButtonH);
-  rect(FastForwardButtonX, FastForwardButtonY, FastForwardButtonW, FastForwardButtonH);
-  rect(PauseButtonX, PauseButtonY, PauseButtonW, PauseButtonH);
-  rect(BarOfVolumeX, BarOfVolumeY, BarOfVolumeW, BarOfVolumeH);
-  rect(TitleX, TitleY, TitleW, TitleH);
-  rect(AuthorX, AuthorY, AuthorW, AuthorH);
-  rect(ImageX, ImageY, ImageW, ImageH);
-  rect(SongListX, SongListY, SongListW, SongListH);
-  rect(SIX, SIY, SIW, SIH);
-  rect(SIIX, SIIY, SIIW, SIIH);
-  rect(SIIIX, SIIIY, SIIIW, SIIIH);
-  rect(ScoreBoxX, ScoreBoxY, ScoreBoxW, ScoreBoxH);
-  rect(PlayerIIScoreX, PlayerIIScoreY, PlayerIIScoreW, PlayerIIScoreH);
-  rect(PlayerIScoreX, PlayerIScoreY, PlayerIScoreW, PlayerIScoreH);
-  rect(ExitX, ExitY, ExitW, ExitH);
-
-  if ( Quit == true ) {
-    rect(400, 400, 400, 400);
+  //
+  if (MP == true) {
+    rect(BackgroundMenuX, BackgroundMenuY, BackgroundMenuW, BackgroundMenuH);
+    rect(PongBackdropX, PongBackdropY, PongBackdropW, PongBackdropH);
+    rect(HeaderX, HeaderY, HeaderW, HeaderH);
+    rect(LoopButtonX, LoopButtonY, LoopButtonW, LoopButtonH);
+    rect(SkipButtonX, SkipButtonY, SkipButtonW, SkipButtonH);
+    rect(PlayButtonX, PlayButtonY, PlayButtonW, PlayButtonH);
+    rect(FastForwardButtonX, FastForwardButtonY, FastForwardButtonW, FastForwardButtonH);
+    rect(PauseButtonX, PauseButtonY, PauseButtonW, PauseButtonH);
+    rect(BarOfVolumeX, BarOfVolumeY, BarOfVolumeW, BarOfVolumeH);
+    rect(TitleX, TitleY, TitleW, TitleH);
+    rect(AuthorX, AuthorY, AuthorW, AuthorH);
+    rect(ImageX, ImageY, ImageW, ImageH);
+    rect(SongListX, SongListY, SongListW, SongListH);
+    rect(SIX, SIY, SIW, SIH);
+    rect(SIIX, SIIY, SIIW, SIIH);
+    rect(SIIIX, SIIIY, SIIIW, SIIIH);
+    rect(PlayerIScoreX, PlayerIScoreY, PlayerIScoreW, PlayerIScoreH);
+    rect(ScoreBoxX, ScoreBoxY, ScoreBoxW, ScoreBoxH);
+    rect(PlayerIIScoreX, PlayerIIScoreY, PlayerIIScoreW, PlayerIIScoreH);
+    rect(ExitX, ExitY, ExitW, ExitH);
   }
+  //
+  if ( Quit == true ) {
+    rect(QuitMenuX, QuitMenuY, QuitMenuW, QuitMenuH);
+    rect(QuitYesX, QuitYesY, QuitYesW, QuitYesH);
+    rect(QuitNoX, QuitNoY, QuitNoW, QuitNoH);
+    rect(QuitQX, QuitQY, QuitQW, QuitQH);
+  }
+  //
 }
 ////
 void mousePressed () {
   //
-  if (mouseX>ExitX && mouseX<=ExitX+ExitW && mouseY<=ExitY+ExitH) exit();
+  if (mouseX>ExitX && mouseX<=ExitX+ExitW && mouseY<=ExitY+ExitH) Quit = true;
+  if ( Quit == true) {
+    if (mouseX>QuitYesX && mouseX<=QuitYesX+QuitYesW && mouseY<=QuitYesY+QuitYesH) exit();
+    //
+    if (mouseX>QuitNoX && mouseX<=QuitNoX+QuitNoW && mouseY<=QuitNoY+QuitNoH) Quit = false;
+  }
   //
 }
 ////
 void keyPressed () {
   //
-  if (key==CODED || keyCode==ESC ) exit();
+  if (key==CODED || keyCode==ESC ) Quit = true;
   //
   if ( key=='P' || key=='p' ) playList[currentSong].play();
   //
@@ -93,13 +106,6 @@ void keyPressed () {
     } else {
       currentSong++;
     }
-  }
-  //BOX?
-  if ( key=='e' || key=='E' ) {
-    Quit = true;
-  }
-  if ( key=='+' || key=='=' ) {
-    Quit = false;
   }
 }
 ////
