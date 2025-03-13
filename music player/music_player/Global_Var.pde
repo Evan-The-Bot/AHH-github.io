@@ -19,4 +19,4 @@ float PlayerIScoreX, PlayerIScoreY, PlayerIScoreW, PlayerIScoreH, PlayerIIScoreX
 float ScoreBoxX, ScoreBoxY, ScoreBoxW, ScoreBoxH, HeaderX, HeaderY, HeaderW, HeaderH, ExitX, ExitY, ExitW, ExitH;
 float QuitMenuX, QuitMenuY, QuitMenuW, QuitMenuH, QuitYesX, QuitYesY, QuitYesW, QuitYesH, QuitNoX, QuitNoY, QuitNoW, QuitNoH, QuitQX, QuitQY, QuitQW, QuitQH;
 //
-boolean Quit = false, MP = true;
+boolean Quit = false, MP = true, MusicSelect = false;

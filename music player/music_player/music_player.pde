@@ -22,7 +22,6 @@ void setup() {
   playList[ currentSong ] = minim.loadFile( file );
   //playList[ currentSong ].play();
   // Minim End
-  
 }
 ////
 void draw() {
@@ -41,13 +40,15 @@ void draw() {
     rect(AuthorX, AuthorY, AuthorW, AuthorH);
     rect(ImageX, ImageY, ImageW, ImageH);
     rect(SongListX, SongListY, SongListW, SongListH);
-    rect(SIX, SIY, SIW, SIH);
-    rect(SIIX, SIIY, SIIW, SIIH);
-    rect(SIIIX, SIIIY, SIIIW, SIIIH);
     rect(PlayerIScoreX, PlayerIScoreY, PlayerIScoreW, PlayerIScoreH);
     rect(ScoreBoxX, ScoreBoxY, ScoreBoxW, ScoreBoxH);
     rect(PlayerIIScoreX, PlayerIIScoreY, PlayerIIScoreW, PlayerIIScoreH);
     rect(ExitX, ExitY, ExitW, ExitH);
+    if (MusicSelect == true) {
+      rect(SIX, SIY, SIW, SIH);
+      rect(SIIX, SIIY, SIIW, SIIH);
+      rect(SIIIX, SIIIY, SIIIW, SIIIH);
+    }
   }
   //
   if ( Quit == true ) {
@@ -61,12 +62,45 @@ void draw() {
 ////
 void mousePressed () {
   //
-  if (mouseX>ExitX && mouseX<=ExitX+ExitW && mouseY<=ExitY+ExitH) Quit = true;
+  if (mouseX>ExitX && mouseX<=ExitX+ExitW && mouseY<=ExitY+ExitH && mouseY>=ExitY) Quit = true;
   if ( Quit == true) {
-    if (mouseX>QuitYesX && mouseX<=QuitYesX+QuitYesW && mouseY<=QuitYesY+QuitYesH) exit();
+    if (mouseX>QuitYesX && mouseX<=QuitYesX+QuitYesW && mouseY<=QuitYesY+QuitYesH && mouseY>=QuitYesY) exit();
     //
-    if (mouseX>QuitNoX && mouseX<=QuitNoX+QuitNoW && mouseY<=QuitNoY+QuitNoH) Quit = false;
+    if (mouseX>QuitNoX && mouseX<=QuitNoX+QuitNoW && mouseY<=QuitNoY+QuitNoH && mouseY>=QuitNoY) Quit = false;
   }
+  //
+  if (mouseX>SongListX && mouseX<=SongListX+SongListW && mouseY<=SongListY+PlayButtonH && mouseY>=SongListY) {
+    MusicSelect = true;
+  }
+  //
+  if (mouseX>SIX && mouseX<=SIX+SIW && mouseY<=SIY+SIH && mouseY>=SIY) {
+    MusicSelect = false;
+  }
+  //
+  if (mouseX>SIIX && mouseX<=SIIX+SIIW && mouseY<=SIIY+SIIH && mouseY>=SIIY) {
+    MusicSelect = false;
+  }
+  //
+  if (mouseX>SIIIX && mouseX<=SIIIX+SIIIW && mouseY<=SIIIY+SIIIH && mouseY>=SIIIY) {
+    MusicSelect = false;
+  }
+  //
+  if (mouseX>LoopButtonX && mouseX<=LoopButtonX+LoopButtonW && mouseY<=LoopButtonY+LoopButtonH && mouseY>=LoopButtonY) {
+  }
+  //
+  if (mouseX>SkipButtonX && mouseX<=SkipButtonX+SkipButtonW && mouseY<=SkipButtonY+SkipButtonH && mouseY>=SkipButtonY) {
+  }
+  //
+  if (mouseX>PlayButtonX && mouseX<=PlayButtonX+PlayButtonW && mouseY<=PlayButtonY+PlayButtonH && mouseY>=PlayButtonY) {
+  }
+  //
+  if (mouseX>FastForwardButtonX && mouseX<=FastForwardButtonX+FastForwardButtonW && mouseY<=FastForwardButtonY+FastForwardButtonH && mouseY>=FastForwardButtonY) {
+  }
+  //
+  if (mouseX>PauseButtonX && mouseX<=PauseButtonX+PauseButtonW && mouseY<=PauseButtonY+PauseButtonH && mouseY>=PauseButtonY) {
+  }
+  //
+  
   //
 }
 ////
