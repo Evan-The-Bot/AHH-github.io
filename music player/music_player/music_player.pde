@@ -25,47 +25,8 @@ void setup() {
 ////
 void draw() {
   //
-  if (MP == true) {
-    fill(darkBlue);
-    rect(BackgroundMenuX, BackgroundMenuY, BackgroundMenuW, BackgroundMenuH);
-    fill(white);
-    rect(PongBackdropX, PongBackdropY, PongBackdropW, PongBackdropH);
-    fill(greenBlue);
-    rect(HeaderX, HeaderY, HeaderW, HeaderH);
-    rect(LoopButtonX, LoopButtonY, LoopButtonW, LoopButtonH);
-    rect(SkipButtonX, SkipButtonY, SkipButtonW, SkipButtonH);
-    rect(PlayButtonX, PlayButtonY, PlayButtonW, PlayButtonH);
-    rect(FastForwardButtonX, FastForwardButtonY, FastForwardButtonW, FastForwardButtonH);
-    rect(PauseButtonX, PauseButtonY, PauseButtonW, PauseButtonH);
-    rect(BarOfVolumeX, BarOfVolumeY, BarOfVolumeW, BarOfVolumeH);
-    rect(TitleX, TitleY, TitleW, TitleH);
-    rect(AuthorX, AuthorY, AuthorW, AuthorH);
-    rect(ImageX, ImageY, ImageW, ImageH);
-    rect(SongListX, SongListY, SongListW, SongListH);
-    fill(white);
-    //
-    fill(darkBlue);
-    rect(PlayerIScoreX, PlayerIScoreY, PlayerIScoreW, PlayerIScoreH);
-    rect(ScoreBoxX, ScoreBoxY, ScoreBoxW, ScoreBoxH);
-    rect(PlayerIIScoreX, PlayerIIScoreY, PlayerIIScoreW, PlayerIIScoreH);
-    fill(mediumRed);
-    rect(ExitX, ExitY, ExitW, ExitH);
-    fill(white);
-    //
-    if (MusicSelect == true) {
-      fill(white);
-      rect(SIX, SIY, SIW, SIH);
-      rect(SIIX, SIIY, SIIW, SIIH);
-      rect(SIIIX, SIIIY, SIIIW, SIIIH);
-      fill(white);
-    }
-    //
-      if (mouseX>SongListX && mouseX<=SongListX+SongListW && mouseY<=SongListY+PlayButtonH+50 && mouseY>=SongListY) {
-    MusicSelect = true;
-  } 
-    //
-  }
-  //
+  MP();
+  //Quit Button Start
   if ( Quit == true ) {
     fill(white);
     rect(QuitMenuX, QuitMenuY, QuitMenuW, QuitMenuH);
@@ -77,35 +38,42 @@ void draw() {
     rect(QuitQX, QuitQY, QuitQW, QuitQH);
     fill(white);
   }
-  //
+  //Quit Button End
 }
 ////
 void mousePressed () {
-  //
-  if (mouseX>SongListX && mouseX<=SongListX+SongListW && mouseY<=SongListY+PlayButtonH+50 && mouseY>=SongListY) {
-    MusicSelect = true;
-  } else {
-    MusicSelect = false;
-  }
+  //Quit Button Start
   if (mouseX>ExitX && mouseX<=ExitX+ExitW && mouseY<=ExitY+ExitH && mouseY>=ExitY) Quit = true;
-  if ( Quit == true) {
+  if ( Quit == true ) {
     if (mouseX>QuitYesX && mouseX<=QuitYesX+QuitYesW && mouseY<=QuitYesY+QuitYesH && mouseY>=QuitYesY) exit();
     //
     if (mouseX>QuitNoX && mouseX<=QuitNoX+QuitNoW && mouseY<=QuitNoY+QuitNoH && mouseY>=QuitNoY) Quit = false;
   }
+  //Quit Button End
+  
+  // Music Select Start
+  if (mouseX>SongListX && mouseX<=SongListX+SongListW && mouseY<=SongListY+PlayButtonH+50 && mouseY>=SongListY) {
+    MusicSelect = true;
+  }
+  //
+  if ( MusicSelect == true ) {
   //
   if (mouseX>SIX && mouseX<=SIX+SIW && mouseY<=SIY+SIH && mouseY>=SIY) {
     MusicSelect = false;
+    println("1");
   }
   //
   if (mouseX>SIIX && mouseX<=SIIX+SIIW && mouseY<=SIIY+SIIH && mouseY>=SIIY) {
     MusicSelect = false;
+        println("2");
   }
   //
   if (mouseX>SIIIX && mouseX<=SIIIX+SIIIW && mouseY<=SIIIY+SIIIH && mouseY>=SIIIY) {
     MusicSelect = false;
+        println("3");
   }
-  //
+  // Music Select End
+  }
   if (mouseX>LoopButtonX && mouseX<=LoopButtonX+LoopButtonW && mouseY<=LoopButtonY+LoopButtonH && mouseY>=LoopButtonY) {
   }
   //
