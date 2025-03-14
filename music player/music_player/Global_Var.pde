@@ -20,8 +20,9 @@ float ScoreBoxX, ScoreBoxY, ScoreBoxW, ScoreBoxH, HeaderX, HeaderY, HeaderW, Hea
 float QuitMenuX, QuitMenuY, QuitMenuW, QuitMenuH, QuitYesX, QuitYesY, QuitYesW, QuitYesH, QuitNoX, QuitNoY, QuitNoW, QuitNoH, QuitQX, QuitQY, QuitQW, QuitQH;
 //
 color lightRed = #FF3434, mediumRed = #FA0303, darkRed = #A70F0F, lightOrange = #FFAD29, mediumOrange = #FF7D03, darkOrange = #D15E00, lightYellow = #FEFF00, mediumYellow = #DBD407;
-color lightGreen = #75FC00, mediumGreen = #3BEA51, darkGreen = #026F10, greenBlue = #40E0D0, lightBlue = #50FFF5, mediumBlue = #005EFC, darkBlue = #003EA5, lightPurple = #AA24FF;
-color mediumPurple = #9D03FF, darkPurple = #6A03AA, lightPink = #FF58F4, mediumPink = #FF03C5, darkPink = #C60098, black = #000000, white = #FFFFFF;
+color lightGreen = #75FC00, mediumGreen = #3BEA51, darkGreen = #026F10, greenBlue = #40E0D0, darkGreenBlue = #02C6B1, lightBlue = #50FFF5, mediumBlue = #005EFC, darkBlue = #003EA5, lightPurple = #AA24FF;
+color mediumPurple = #9D03FF, darkPurple = #6A03AA, lightPink = #FF58F4, mediumPink = #FF03C5, darkPink = #C60098, black = #000000, white = #FFFFFF, grey = #D6D4D4;
 //
-boolean Quit = false, MP = true, MusicSelect = false;
+boolean Quit = false, MP = true, MusicSelect = false, MusicButtonYes = false;
+;
 //
