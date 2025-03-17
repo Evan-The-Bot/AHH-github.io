@@ -8,7 +8,8 @@ import ddf.minim.ugens.*;
 // Minim End
 void setup() {
   //
-  fullScreen();
+  //fullScreen();
+  size(1500,1000);
   //
   appWidth = displayWidth;
   appHeight = displayHeight;
@@ -36,12 +37,15 @@ void draw() {
       fill(mediumGreen);
     }
     rect(QuitYesX, QuitYesY, QuitYesW, QuitYesH);
+    //
     if (mouseX>QuitNoX && mouseX<=QuitNoX+QuitNoW && mouseY<=QuitNoY+QuitNoH && mouseY>=QuitNoY) {
       fill(darkRed);
     } else {
       fill(mediumRed);
     }
     rect(QuitNoX, QuitNoY, QuitNoW, QuitNoH);
+    //
+    
     fill(lightYellow);
     rect(QuitQX, QuitQY, QuitQW, QuitQH);
   }

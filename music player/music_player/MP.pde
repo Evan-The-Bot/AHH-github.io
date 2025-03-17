@@ -52,6 +52,8 @@ void MP() {
     }
     //
     rect(BarOfVolumeX, BarOfVolumeY, BarOfVolumeW, BarOfVolumeH);
+    //
+    fill(greenBlue);
     rect(TitleX, TitleY, TitleW, TitleH);
     rect(AuthorX, AuthorY, AuthorW, AuthorH);
     rect(ImageX, ImageY, ImageW, ImageH);
@@ -62,12 +64,12 @@ void MP() {
       fill(greenBlue);
     }
     rect(SongListX, SongListY, SongListW, SongListH);
-    fill(white);
     //
     fill(darkBlue);
     rect(PlayerIScoreX, PlayerIScoreY, PlayerIScoreW, PlayerIScoreH);
     rect(ScoreBoxX, ScoreBoxY, ScoreBoxW, ScoreBoxH);
     rect(PlayerIIScoreX, PlayerIIScoreY, PlayerIIScoreW, PlayerIIScoreH);
+    //
     // Quit Button Start
     if (mouseX>ExitX && mouseX<=ExitX+ExitW && mouseY<=ExitY+ExitH && mouseY>=ExitY) {
       fill(darkRed);
@@ -75,7 +77,11 @@ void MP() {
       fill(mediumRed);
     }
     rect(ExitX, ExitY, ExitW, ExitH);
+    textSize(50);
+    fill(black);
+    text("x", ExitX,ExitY,ExitW,ExitH);
     // Quit Button End
+    //
     // Music Select Button Start
     if (MusicSelect == true) {
       if (mouseX>SIX && mouseX<=SIX+SIW && mouseY<=SIY+SIH && mouseY>=SIY) {
@@ -98,6 +104,7 @@ void MP() {
         fill(white);
       }
       rect(SIIIX, SIIIY, SIIIW, SIIIH);
+      //
       fill(white);
       // Music Select End
     }

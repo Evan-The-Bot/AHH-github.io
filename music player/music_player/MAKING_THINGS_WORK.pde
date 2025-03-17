@@ -119,4 +119,9 @@ void functional() {
   QuitQY = appHeight * 40/100;
   QuitQW = appWidth * 1170/9000;
   QuitQH = appHeight * 2/25;
+  //
+  exitXX = appWidth; 
+  exitXY = appHeight;
+  exitXW = appWidth;
+  exitXH = appHeight;
 }

@@ -18,6 +18,7 @@ float SIX, SIY, SIW, SIH, SIIX, SIIY, SIIW, SIIH, SIIIX, SIIIY, SIIIW, SIIIH, So
 float PlayerIScoreX, PlayerIScoreY, PlayerIScoreW, PlayerIScoreH, PlayerIIScoreX, PlayerIIScoreY, PlayerIIScoreW, PlayerIIScoreH;
 float ScoreBoxX, ScoreBoxY, ScoreBoxW, ScoreBoxH, HeaderX, HeaderY, HeaderW, HeaderH, ExitX, ExitY, ExitW, ExitH;
 float QuitMenuX, QuitMenuY, QuitMenuW, QuitMenuH, QuitYesX, QuitYesY, QuitYesW, QuitYesH, QuitNoX, QuitNoY, QuitNoW, QuitNoH, QuitQX, QuitQY, QuitQW, QuitQH;
+float exitXX, exitXY, exitXW, exitXH;
 //
 color lightRed = #FF3434, mediumRed = #FA0303, darkRed = #A70F0F, lightOrange = #FFAD29, mediumOrange = #FF7D03, darkOrange = #D15E00, lightYellow = #FEFF00, mediumYellow = #DBD407;
 color lightGreen = #75FC00, mediumGreen = #3BEA51, darkGreen = #026F10, greenBlue = #40E0D0, darkGreenBlue = #02C6B1, lightBlue = #50FFF5, mediumBlue = #005EFC, darkBlue = #003EA5, lightPurple = #AA24FF;
