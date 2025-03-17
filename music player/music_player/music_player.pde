@@ -8,8 +8,7 @@ import ddf.minim.ugens.*;
 // Minim End
 void setup() {
   //
-  //fullScreen();
-  size(1500,1000);
+  fullScreen();
   //
   appWidth = displayWidth;
   appHeight = displayHeight;
@@ -45,7 +44,7 @@ void draw() {
     }
     rect(QuitNoX, QuitNoY, QuitNoW, QuitNoH);
     //
-    
+
     fill(lightYellow);
     rect(QuitQX, QuitQY, QuitQW, QuitQH);
   }
@@ -55,12 +54,12 @@ void draw() {
 void mousePressed () {
   //
   //Quit Button Start
-  if (mouseX>ExitX && mouseX<=ExitX+ExitW && mouseY<=ExitY+ExitH && mouseY>=ExitY && Quit == false) { 
+  if (mouseX>ExitX && mouseX<=ExitX+ExitW && mouseY<=ExitY+ExitH && mouseY>=ExitY && Quit == false) {
     Quit = true;
   } else {
-   if (mouseX>ExitX && mouseX<=ExitX+ExitW && mouseY<=ExitY+ExitH && mouseY>=ExitY && Quit == true) {
-     exit();
-   }
+    if (mouseX>ExitX && mouseX<=ExitX+ExitW && mouseY<=ExitY+ExitH && mouseY>=ExitY && Quit == true) {
+      exit();
+    }
   }
   if ( Quit == true ) {
     if (mouseX>QuitYesX && mouseX<=QuitYesX+QuitYesW && mouseY<=QuitYesY+QuitYesH && mouseY>=QuitYesY) exit();
