@@ -1,5 +1,5 @@
 void setup() {
-  //
+  //version dif
   fullScreen();
   //
   Population();
@@ -28,4 +28,4 @@ void mousePressed () {
   //
 }
 void keyPressed () {
-} yea
+} 
