@@ -1,8 +1,8 @@
-void RightColumnDraw() {
+void LeftColumnDraw() {
   // Music Column
   if (MainProgram == true) {
     fill(darkBlue);
-    rect(BackgroundMenuX, BackgroundMenuY, BackgroundMenuW, BackgroundMenuH);
+    rect(BackgroundMenuLX, BackgroundMenuLY, BackgroundMenuLW, BackgroundMenuLH);
     fill(greenBlue);
     rect(TitleX, TitleY, TitleW, TitleH);
     textSize(generalFontSize);
@@ -38,6 +38,9 @@ void RightColumnDraw() {
       fill(greenBlue);
     }
     rect(PauseButtonX, TopRowButtonsY, ControlsButtonW, ControlsButtonH);
+    fill(black);
+    rect(SPauseIX, TopSymbolY, SPauseW, SymbolH);
+    rect(SPauseIIX, TopSymbolY, SPauseW, SymbolH);
     // Stop Button
     if (mouseX>StopButtonX && mouseX<=StopButtonX+ControlsButtonW && mouseY<=TopRowButtonsY+ControlsButtonH && mouseY>=TopRowButtonsY) {
       fill(darkGreenBlue);
@@ -45,6 +48,8 @@ void RightColumnDraw() {
       fill(greenBlue);
     }
     rect(StopButtonX, TopRowButtonsY, ControlsButtonW, ControlsButtonH);
+    fill(black);
+    rect(SStopX, TopSymbolY, SStopW, SymbolH);
     //
     //// Buttons Bottom Row Mouse Check
     // Loop Button
@@ -71,7 +76,7 @@ void RightColumnDraw() {
     //
   }
 }
-void RightColumnPress() {
+void LeftColumnPress() {
   if (MainProgram == true) {
     // Plays Audio
     if (mouseX>PlayButtonX && mouseX<=PlayButtonX+ControlsButtonW && mouseY<=TopRowButtonsY+ControlsButtonH && mouseY>=TopRowButtonsY) {

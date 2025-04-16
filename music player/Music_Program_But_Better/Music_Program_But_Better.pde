@@ -1,19 +1,26 @@
 void setup() {
-  //version dif
+  //
   fullScreen();
   //
   Population();
   //
   Minim();
   //
+  PongSetup();
+  //
+  SplashSetup();
 }
 void draw() {
   //
+  SplashDraw();
+  //
   MainProgram();
   //
-  RightColumnDraw();
+  LeftColumnDraw();
   //
   MusicChoiceDraw();
+  //
+  PongDraw();
   //
   ExitDraw();
   //
@@ -22,10 +29,11 @@ void mousePressed () {
   //
   MusicChoicePress();
   //
-  ExitPress();
+  LeftColumnPress();
   //
-  RightColumnPress();
+  ExitPress();
   //
 }
 void keyPressed () {
-} 
+  PongKeyKong();
+}

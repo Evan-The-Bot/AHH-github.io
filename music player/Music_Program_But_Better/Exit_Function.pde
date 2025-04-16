@@ -3,21 +3,25 @@ void ExitDraw() {
     //
     //// Button Draw
     //
-    if (mouseX>ExitX && mouseX<=ExitX+ExitW && mouseY<=ExitY+ExitH && mouseY>=ExitY) {
+    if (mouseX>ExitX && mouseX<=ExitX+ExitW && mouseY<=ExitY+ExitH && mouseY>=ExitY && Quit == true) {
       fill(darkRed);
     } else {
       fill(mediumRed);
     }
+    strokeWeight(5);
     rect(ExitX, ExitY, ExitW, ExitH);
-    textSize(xSize);
-    textFont(XFont, xSize);
+    strokeWeight(1);
+    textFont(xFont, xSize);
     textAlign(CENTER, TOP);
     fill(black);
-    text(x, ExitX, ExitY, ExitW, ExitH);
+    text(AX, ExitX, ExitY, ExitW, ExitH);
     //
     //// Drawing Quit Menu
     //
     if ( Quit == true ) {
+      fill(black, 75);
+      rect(ShaderQBoxX, ShaderQBoxY, ShaderQBoxW, ShaderQBoxH);
+      //
       fill(white);
       rect(QuitMenuX, QuitMenuY, QuitMenuW, QuitMenuH);
       //
@@ -25,7 +29,6 @@ void ExitDraw() {
       //
       fill(lightYellow);
       rect(QuitQX, QuitQY, QuitQW, QuitQH);
-      textSize(generalFontSize);
       textFont(generalFont, generalFontSize);
       textAlign(CENTER, CENTER);
       fill(black);
