@@ -1,5 +1,5 @@
 ////General Use Everywhere
-boolean MainProgram = false;
+boolean MainProgram = true;
 int appWidth, appHeight;
 PFont generalFont;
 int generalFontSize, clockFontSize;
